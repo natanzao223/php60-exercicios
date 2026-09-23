@@ -10,7 +10,6 @@ Componentes:
 26014123-2-Gustavo Tristão
 26014469-2-Rafael Baliski
 Data: 17 de Setembro de 2026
-Descritivo: Escreva um programa que leia um número inteiro e exiba se ele é PAR ou ÍMPAR
 */
 // exercicio 31 Escreva um programa que leia um número inteiro e exiba se ele é PAR ou ÍMPAR
 
@@ -21,5 +20,6 @@ if ($numero % 2 == 0) {
 } else {
     echo "O número $numero é ímpar";
 }
+//O programa lê um número e usa o operador % para verificar o resto da divisão por 2. Se o resto for 0, o número é par caso contrário, é ímpar
 
 ?>
