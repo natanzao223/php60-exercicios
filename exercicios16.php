@@ -12,17 +12,19 @@ Componentes:
 Data: 23 de Setembro de 2026 
 */ 
 
-//exercicio16 Escreva um programa que leia um número inteiro positivo e exiba o dobro dele. Se o número for negativo, informe o erro.
+// Exercício 16: ler um número inteiro positivo e exibir o dobro dele.
+// Se o número for negativo, informar erro.
 
-$numero = 10;
+echo "Digite um número inteiro: ";
+$numero = (int) readline();
 
-if ($numero >= 0) {
-    $dobro = $numero * 2;
-    echo "O dobro do número é: $dobro";
+// Verifica se o número é negativo antes de calcular o dobro
+if ($numero < 0) {
+    // Número inválido: exibe mensagem de erro e encerra
+    echo "Erro: o número não pode ser negativo." . PHP_EOL;
 } else {
-    echo "Erro: o número não pode ser negativo";
+    // Número válido: calcula o dobro multiplicando por 2
+    $dobro = $numero * 2;
+    echo "O dobro de $numero é $dobro." . PHP_EOL;
 }
-
-//O programa verifica se o número é positivo. Se não for negativo, multiplica o número por 2 e exibe o dobro. Se for negativo, informa o erro.
-
 ?>
